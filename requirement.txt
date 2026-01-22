@@ -1,0 +1,3 @@
+# Dieses Repository ist primär ein n8n-Workflow-Repo (JSON).
+# Für den Betrieb in n8n werden keine Python requirements aus diesem Repo 
+installiert.

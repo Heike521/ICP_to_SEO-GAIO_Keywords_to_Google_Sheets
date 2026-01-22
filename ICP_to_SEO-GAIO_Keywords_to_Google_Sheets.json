@@ -1,0 +1,557 @@
+{
+  "name": "SEO/GAIO_Keywords_for_icp",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Deine perfekte Zielgruppe",
+        "formDescription": "=Beschreibe deine ideale Zielgruppe (ICP) so präzise wie möglich.\nAuf Basis deiner Angaben werden exakt 20 relevante SEO- & GAIO-Keywords (Short-Head & Long-Tail) automatisch generiert und gespeichert.\n\n🔹 Mehrere Angaben pro Feld sind erlaubt\n🔹 Trenne mehrere Werte immer durch Kommas (,)\n   - Beispiel: SaaS, Industrie, E-Commerce\n   - Beispiel: Marketing Manager, Geschäftsführer\n🔹 Bitte keine Marken- oder Firmennamen verwenden\n🔹 Je klarer und strukturierter die Angaben, desto      besser die Keyword-Qualität\n\nDie eingegebenen Daten werden ausschließlich zur automatisierten Keyword-Generierung verwendet. Es werden keine personenbezogenen Daten benötigt oder verarbeitet. Eine Weitergabe an Dritte erfolgt nicht.",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "In welcher Branche ist deine Zielgruppe tätig?",
+              "fieldName": "branche",
+              "placeholder": "Beispiel: Industrie, SaaS, Handwerk, Gesundheitswesen"
+            },
+            {
+              "fieldLabel": "Welche berufliche Rolle oder Funktion hat deine Zielgruppe?",
+              "fieldName": "target_role",
+              "placeholder": "Beispiel: Geschäftsführer, Marketing Manager, Buchhalter"
+            },
+            {
+              "fieldLabel": "Typisches Alter oder Altersbereich deiner Zielgruppe.",
+              "fieldName": "age",
+              "placeholder": "Beispiel: 30–45, 50+, 25–35"
+            },
+            {
+              "fieldLabel": "Welches konkrete Ziel möchte deine Zielgruppe erreichen? ",
+              "fieldName": "target_goal",
+              "placeholder": "Beispiele: Prozesse digitalisieren,  Effizienz steigern,  mehr qualifizierte Leads gewinnen,  Umsatz erhöhen"
+            },
+            {
+              "fieldLabel": "Welches zentrale Problem oder Hindernis hält deine Zielgruppe aktuell davon ab?",
+              "fieldName": "target_pain",
+              "placeholder": "=Beispiele: Manuelle zeitaufwändige Abläufe, hohe Kosten, fehlende Sichtbarkeit online, zu wenig Anfragen"
+            },
+            {
+              "fieldLabel": "In welchem Land oder welcher Region befindet sich deine Zielgruppe?",
+              "fieldName": "target_land",
+              "placeholder": "Beispiel: DACH, Deutschland, Österreich"
+            },
+            {
+              "fieldLabel": "In welcher Sprache sollen die Keywords generiert werden?",
+              "fieldName": "language",
+              "placeholder": "=Beispiel: Deutsch, Englisch"
+            }
+          ]
+        },
+        "options": {
+          "customCss": ":root {\n\t/* Typography */\n\t--font-family: 'Open Sans', sans-serif;\n\t--font-weight-normal: 400;\n\t--font-weight-bold: 600;\n\n\t--font-size-body: 13px;\n\t--font-size-label: 14px;\n\t--font-size-test-notice: 12px;\n\t--font-size-input: 14px;\n\t--font-size-header: 22px;\n\t--font-size-paragraph: 14px;\n\t--font-size-link: 12px;\n\t--font-size-error: 12px;\n\n\t--font-size-html-h1: 28px;\n\t--font-size-html-h2: 20px;\n\t--font-size-html-h3: 16px;\n\t--font-size-html-h4: 14px;\n\t--font-size-html-h5: 12px;\n\t--font-size-html-h6: 10px;\n\n\t--font-size-subheader: 14px;\n\n\t/* Colors (Professional, neutral, high contrast) */\n\t--color-background: #f6f8fb;           /* softer light gray-blue */\n\t--color-card-bg: #ffffff;\n\t--color-card-border: #e3e7ef;\n\t--color-card-shadow: rgba(15, 23, 42, 0.08); /* slate-ish shadow */\n\n\t--color-header: #0f172a;               /* slate-900 */\n\t--color-header-subtext: #475569;       /* slate-600 */\n\n\t--color-label: #0f172a;                /* labels readable */\n\t--color-input-text: #0f172a;           /* input text */\n\t--color-link: #2563eb;                 /* blue-600 */\n\t--color-html-text: #1f2937;            /* gray-800 */\n\t--color-html-link: #2563eb;\n\n\t--color-input-border: #cbd5e1;         /* slate-300 */\n\t--color-focus-border: #2563eb;         /* blue-600 */\n\t--color-required: #ef4444;             /* red-500 */\n\n\t/* Placeholder */\n\t--opacity-placeholder: 1;              /* keep stable across browsers */\n\t/* If your CSS uses opacity only, keep this.\n\t   If you can target ::placeholder, see note below for a better color. */\n\n\t/* Buttons */\n\t--color-submit-btn-bg: #2563eb;        /* blue-600 */\n\t--color-submit-btn-text: #ffffff;\n\n\t--color-clear-button-bg: #64748b;      /* slate-500 */\n\n\t/* Notice (Test banner) – toned down, still visible */\n\t--color-test-notice-text: #92400e;      /* amber-800 */\n\t--color-test-notice-bg: #fffbeb;        /* amber-50 */\n\t--color-test-notice-border: #fde68a;    /* amber-200 */\n\n\t/* Error */\n\t--color-error: #dc2626;                /* red-600 */\n\n\t/* Border Radii */\n\t--border-radius-card: 12px;\n\t--border-radius-input: 10px;\n\t--border-radius-clear-btn: 999px;\n\t--card-border-radius: 12px;\n\n\t/* Spacing */\n\t--padding-container-top: 28px;\n\t--padding-card: 24px;\n\t--padding-test-notice-vertical: 12px;\n\t--padding-test-notice-horizontal: 18px;\n\t--margin-bottom-card: 16px;\n\t--padding-form-input: 12px;\n\t--card-padding: 24px;\n\t--card-margin-bottom: 16px;\n\n\t/* Dimensions */\n\t--container-width: 480px;              /* slightly wider = more “premium” */\n\t--submit-btn-height: 48px;\n\t--checkbox-size: 18px;\n\n\t/* Shadow */\n\t--box-shadow-card: 0px 10px 30px -12px var(--color-card-shadow);\n}\n"
+        }
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.5,
+      "position": [
+        -160,
+        -608
+      ],
+      "id": "bf970e8d-5839-4bed-a39f-3d6c097fa6f1",
+      "name": "start_form_icp_input"         
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "316ec37c-dc86-4ca7-82ca-b3b17bbb22d3",
+              "name": "branche",
+              "value": "={{ $json.branche }}",
+              "type": "string"
+            },
+            {
+              "id": "00749a3e-d53c-493f-bc5a-b3528d9a9d8c",
+              "name": "target_role",
+              "value": "={{ $json.target_role }}",
+              "type": "string"
+            },
+            {
+              "id": "e5b92baf-2c06-41d4-ac48-d91168d4be46",
+              "name": "age",
+              "value": "={{ $json.age }}",
+              "type": "string"
+            },
+            {
+              "id": "aaac40fe-7213-4a34-986d-c136e8d74141",
+              "name": "target_goal",
+              "value": "={{ $json.target_goal }}",
+              "type": "string"
+            },
+            {
+              "id": "c07616ff-f3d2-438f-9333-ec87e8097e8a",
+              "name": "target_pain",
+              "value": "={{ $json.target_pain }}",
+              "type": "string"
+            },
+            {
+              "id": "c03820d7-e13b-428a-baf5-4cb7d0bdaeaa",
+              "name": "target_land",
+              "value": "={{ $json.target_land }}",
+              "type": "string"
+            },
+            {
+              "id": "f7e878b6-e1b0-40ee-9cd4-77b2dfd54fb7",
+              "name": "language",
+              "value": "={{ $json.language }}",
+              "type": "string"
+            },
+            {
+              "id": "99616ceb-e251-4a25-b02d-f020a9565d63",
+              "name": "Zeitstempel",
+              "value": "={{ $json.submittedAt }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        112,
+        -608
+      ],
+      "id": "1c1e19cc-7a35-4a77-9f27-8dde975d2697",
+      "name": "validate_normalize_icp"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4o-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-4O-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "content": "=Kontext: Zielgruppenanalyse (ICP)\n\nEingabedaten:\n- Branche: {{ $json.branche }}\n- Zielgruppenrolle: {{ $json.target_role }}\n- Alter / Altersbereich: {{ $json.age }}\n- Hauptziel: {{ $json.target_goal }}\n- Zentrales Problem / Pain Point: {{ $json.target_pain }}\n- Land / Region: {{ $json.target_land }}\n- Sprache: {{ $json.language }}\n- Zeitstempel: {{ $json.Zeitstempel }}\n\nHinweise:\n- Die Zielgruppe kann B2B oder B2C sein.\n- Mehrere Werte pro Feld können vorkommen (kommagetrennt).\n- Alle angegebenen Werte sind gleichwertig zu berücksichtigen."
+            },
+            {
+              "role": "system",
+              "content": "=Rolle:\nDu bist ein erfahrener SEO- und GAIO-Stratege mit Fokus auf\nB2B- und B2C-Suchintentionen, Keyword-Strategien und ICP-basierte Content-Optimierung.\n\nAufgabe:\nErzeuge exakt 20 hochwertige Keywords basierend auf dem angegebenen ICP.\n\nZiel:\nKeywords sollen reale Suchintentionen der Zielgruppe abbilden\nund sowohl Short-Head als auch Long-Tail Begriffe enthalten.\n\nRegeln (verbindlich):\n- Antworte ausschließlich im definierten JSON-Format\n- Gib exakt 20 Keywords zurück (nicht mehr, nicht weniger)\n- keywords ist ein Array aus Strings\n- Keine Marken-, Produkt- oder Company-Namen\n- Keine Duplikate oder rein synonyme Varianten\n- Keywords müssen natürlich, suchnah und sprachlich korrekt sein\n- Keywords müssen zur angegebenen Sprache passen\n\nB2B / B2C Logik:\n- Wenn die Eingaben auf eine B2B-Zielgruppe hindeuten:\n  - Fokus auf Rolle, berufliche Probleme, Prozesse, Effizienz, ROI\n- Wenn die Eingaben auf eine B2C-Zielgruppe hindeuten:\n  - Fokus auf persönliche Bedürfnisse, Nutzen, Lösungen, Alltagssituationen\n- Wenn keine klare Zuordnung möglich ist:\n  - Generiere eine ausgewogene Mischung aus B2B- und B2C-orientierten Keywords\n\n- Leite Keywords aus folgenden Dimensionen ab:\n  1. Branche + Rolle/Nutzertyp\n  2. Hauptziel (Desired Outcome)\n  3. Problem / Pain Point\n  4. Kombinationen aus Ziel + Problem + Rolle/Nutzertyp\n- Keyword-Typen:\n  - Short-Head Keywords (2–3 Wörter)\n  - Long-Tail Keywords (4+ Wörter, ziel- oder problemorientiert)\n\nMindestverteilung:\n- Mindestens 8 Short-Head Keywords\n- Mindestens 12 Long-Tail Keywords\n\nICP-Daten:\n- Branche: {{ $json.branche }}\n- Rolle: {{ $json.target_role }}\n- Alter: {{ $json.age }}\n- Hauptziel: {{ $json.target_goal }}\n- Problem / Pain: {{ $json.target_pain }}\n- Region: {{ $json.target_land }}\n- Sprache: {{ $json.language }}\n\nOutput-Schema (strict):\n{\n  \"keywords\": [\"string\", \"... exakt 20 Einträge\"],\n  \"meta\": {\n    \"language\": \"string\",\n    \"region\": \"string\",\n    \"audience_type\": \"b2b | b2c | mixed\",\n    \"focus\": \"seo + gaio\",\n    \"short_head_count\": number,\n    \"long_tail_count\": number\n  }\n}"
+            }
+          ]
+        },
+        "simplify": false,
+        "builtInTools": {},
+        "options": {
+          "maxTokens": 800,
+          "temperature": 0.4
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        352,
+        -608
+      ],
+      "id": "bc4a4a78-150e-44b1-a84d-3a4b0a95ff11",
+      "name": "transform_ai_generate_keywords",
+      "credentials": {
+        "openAiApi": {
+          "id": "REPLACE_ME",
+          "name": "openai-default"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "287b45a7-6ee0-4d53-a542-847b53ecbef2",
+              "name": "id",
+              "value": "={{ $json.id }}",
+              "type": "string"
+            },
+            {
+              "id": "8aa73ba3-7a48-463c-8beb-2410296396d4",
+              "name": "created_at",
+              "value": "={{ $json.created_at }}",
+              "type": "number"
+            },
+            {
+              "id": "55e902e6-b47c-4881-9f52-22ab4d3e6446",
+              "name": "model",
+              "value": "={{ $json.model }}",
+              "type": "string"
+            },
+            {
+              "id": "6e53124d-75f7-4ff8-aba0-75c32e0dd740",
+              "name": "ai_text",
+              "value": "={{ $json.output[0].content[0].text }}",
+              "type": "string"
+            },
+            {
+              "id": "d9a7f668-be51-4ac7-a7c9-d03b296f9ae6",
+              "name": "branche",
+              "value": "={{ $('validate_normalize_icp').item.json.branche }}",
+              "type": "string"
+            },
+            {
+              "id": "fc3d00d3-e7dc-42ee-a6f9-2d32ff302bea",
+              "name": "target_role",
+              "value": "={{ $('validate_normalize_icp').item.json.target_role }}",
+              "type": "string"
+            },
+            {
+              "id": "300b79b7-b563-4624-9acd-0278313a0ac6",
+              "name": "age",
+              "value": "={{ $('validate_normalize_icp').item.json.age }}",
+              "type": "string"
+            },
+            {
+              "id": "1e3110a2-d0aa-41b7-9960-aa9484e62ebc",
+              "name": "target_goal",
+              "value": "={{ $('validate_normalize_icp').item.json.target_goal }}",
+              "type": "string"
+            },
+            {
+              "id": "d1da1196-9087-4565-aa57-9f126a225ef3",
+              "name": "target_pain",
+              "value": "={{ $('validate_normalize_icp').item.json.target_pain }}",
+              "type": "string"
+            },
+            {
+              "id": "5a4c384e-65c1-43f6-8901-7b8b7f96a4c8",
+              "name": "target_land",
+              "value": "={{ $('validate_normalize_icp').item.json.target_land }}",
+              "type": "string"
+            },
+            {
+              "id": "e042da9c-4e5b-4ca6-a111-bbbcc4b180ef",
+              "name": "language",
+              "value": "={{ $('validate_normalize_icp').item.json.language }}",
+              "type": "string"
+            },
+            {
+              "id": "0ce1112b-cd15-4ef4-902c-d12b891924ab",
+              "name": "Zeitstempel",
+              "value": "={{ $('validate_normalize_icp').item.json.Zeitstempel }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -144,
+        -288
+      ],
+      "id": "08823c32-01ff-48d3-a4c8-28a40f1b2224",
+      "name": "transform_attach_icp_and_ai_text"
+    },
+    {
+      "parameters": {
+        "language": "pythonNative",
+        "pythonCode": "import json\nimport re\n\ndef _strip_fences(s: str) -> str:\n    s = (s or \"\").strip()\n    if s.startswith(\"```\"):\n        nl = s.find(\"\\n\")\n        if nl != -1:\n            s = s[nl + 1 :]\n        if s.endswith(\"```\"):\n            s = s[:-3]\n    return s.strip()\n\ndef _extract_text_from_response_item(d: dict) -> str:\n    if not isinstance(d, dict):\n        return \"\"\n    try:\n        txt = d[\"output\"][0][\"content\"][0][\"text\"]\n        return txt if isinstance(txt, str) else \"\"\n    except Exception:\n        pass\n    if isinstance(d.get(\"text\"), str):\n        return d[\"text\"]\n    if isinstance(d.get(\"query\"), str):\n        return d[\"query\"]\n    return \"\"\n\ndef _safe_json_loads(text: str):\n    if not text:\n        return None\n    t = _strip_fences(text)\n    try:\n        return json.loads(t)\n    except Exception:\n        a = t.find(\"{\")\n        b = t.rfind(\"}\")\n        if a != -1 and b != -1 and b > a:\n            try:\n                return json.loads(t[a:b+1])\n            except Exception:\n                return None\n        return None\n\ndef _normalize_keywords(kws):\n    if not isinstance(kws, list):\n        return []\n    out = []\n    seen = set()\n    for k in kws:\n        if not isinstance(k, str):\n            continue\n        kk = re.sub(r\"\\s+\", \" \", k.strip())\n        if not kk:\n            continue\n        key = kk.casefold()\n        if key in seen:\n            continue\n        seen.add(key)\n        out.append(kk)\n    return out\n\ndef _word_count(s: str) -> int:\n    return len([w for w in re.split(r\"\\s+\", (s or \"\").strip()) if w])\n\ndef _split_short_long(kws):\n    short_head = []\n    long_tail = []\n    for kw in kws:\n        wc = _word_count(kw)\n        if 2 <= wc <= 3:\n            short_head.append(kw)\n        elif wc >= 4:\n            long_tail.append(kw)\n        else:\n            short_head.append(kw)\n    return short_head, long_tail\n\nresult = []\n\nfor it in _items:\n    payload = it.get(\"json\", {}) if isinstance(it, dict) else {}\n\n    # ICP kann flach sein oder unter payload[\"icp\"] liegen\n    icp = payload.get(\"icp\", {}) if isinstance(payload.get(\"icp\", {}), dict) else {}\n\n    def _get_icp(field_name: str):\n        # erst flach, dann icp.*\n        v = payload.get(field_name)\n        if v is None:\n            v = icp.get(field_name)\n        return v\n\n    raw_text = payload.get(\"ai_text\") or _extract_text_from_response_item(payload)\n    obj = _safe_json_loads(raw_text) if isinstance(raw_text, str) else None\n\n    if not isinstance(obj, dict):\n        result.append({\n            \"json\": {\n                \"count\": 0,\n                \"keywords\": [],\n                \"short_head\": [],\n                \"long_tail\": [],\n                \"short_head_count\": 0,\n                \"long_tail_count\": 0,\n                \"valid_exactly_20\": False,\n                \"parse_error\": True,\n                \"raw_text_excerpt\": (raw_text or \"\")[:500],\n\n                # ICP passthrough (falls vorhanden)\n                \"branche\": _get_icp(\"branche\"),\n                \"target_role\": _get_icp(\"target_role\"),\n                \"age\": _get_icp(\"age\"),\n                \"target_goal\": _get_icp(\"target_goal\"),\n                \"target_pain\": _get_icp(\"target_pain\"),\n                \"target_land\": _get_icp(\"target_land\"),\n                \"language\": _get_icp(\"language\"),\n                \"Zeitstempel\": _get_icp(\"Zeitstempel\"),\n            }\n        })\n        continue\n\n    kws = _normalize_keywords(obj.get(\"keywords\", []))\n    short_head, long_tail = _split_short_long(kws)\n\n    meta = obj.get(\"meta\", {})\n    if not isinstance(meta, dict):\n        meta = {}\n\n    result.append({\n        \"json\": {\n            \"count\": len(kws),\n            \"keywords\": kws,\n            \"short_head\": short_head,\n            \"long_tail\": long_tail,\n            \"short_head_count\": len(short_head),\n            \"long_tail_count\": len(long_tail),\n            \"valid_exactly_20\": (len(kws) == 20),\n            \"parse_error\": False,\n            \"meta\": meta,\n\n            # ICP passthrough (kommt jetzt korrekt aus payload/icp)\n            \"branche\": _get_icp(\"branche\"),\n            \"target_role\": _get_icp(\"target_role\"),\n            \"age\": _get_icp(\"age\"),\n            \"target_goal\": _get_icp(\"target_goal\"),\n            \"target_pain\": _get_icp(\"target_pain\"),\n            \"target_land\": _get_icp(\"target_land\"),\n            \"language\": _get_icp(\"language\"),\n            \"Zeitstempel\": _get_icp(\"Zeitstempel\"),\n        }\n    })\n\nreturn result\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        160,
+        -288
+      ],
+      "id": "fd300e7a-fc34-45e8-8574-c5582ab9103b",
+      "name": "transform_parse_ai_json"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "keywords",
+        "include": "selectedOtherFields",
+        "fieldsToInclude": "branche, target_role, age, target_goal, target_pain, target_land, language, Zeitstempel",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        480,
+        -288
+      ],
+      "id": "89045814-2f09-46a4-b663-f42d5cc92f6c",
+      "name": "transform_split_keywords"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "language": "pythonNative",
+        "pythonCode": "import re\n\ndef word_count(s: str) -> int:\n    s = (s or \"\").strip()\n    if not s:\n        return 0\n    return len([w for w in re.split(r\"\\s+\", s) if w])\n\nj = _item.get(\"json\", {}) if isinstance(_item, dict) else {}\n\nkw = (j.get(\"keywords\") or \"\").strip()\nwc = word_count(kw)\n\ntail_type = \"short_head\" if 2 <= wc <= 3 else \"long_tail\" if wc >= 4 else \"short_head\"\n\nshort_col = kw if tail_type == \"short_head\" else \"\"\nlong_col = kw if tail_type == \"long_tail\" else \"\"\n\nreturn {\n  \"json\": {\n    # für Sheets\n    \"Gesamt\": kw,\n    \"Short-Head\": short_col,\n    \"Long-Tail\": long_col,\n\n    # optional debug\n    \"tail_type\": tail_type,\n    \"word_count\": wc,\n\n    # ICP\n    \"Zeitstempel\": j.get(\"Zeitstempel\"),\n    \"Sprache der Keywords\": j.get(\"language\"),\n    \"Land/Region der Zielgruppe\": j.get(\"target_land\"),\n    \"Branche\": j.get(\"branche\"),\n    \"Zielgruppenrolle\": j.get(\"target_role\"),\n    \"Alter\": j.get(\"age\"),\n    \"Ziele der Zielgruppe\": j.get(\"target_goal\"),\n    \"Ängste der Zielgruppe\": j.get(\"target_pain\"),\n  }\n}\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -144,
+        32
+      ],
+      "id": "2537e58c-6979-448d-90e7-3ed39604c963",
+      "name": "transform_classify_tail_and_keep_icp"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "REPLACE_WITH_YOUR_SHEET_ID",
+          "mode": "list",
+          "cachedResultName": "Workflows_n8n",
+          "cachedResultUrl": ""
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "REPLACE_WITH_YOUR_SHEET_GID",
+          "mode": "list",
+          "cachedResultName": "Ergebnis_SEO-GAIO_Keywords",
+          "cachedResultUrl": ""
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Zeitstempel": "={{ $json.Zeitstempel }}",
+            "Branche": "={{ $json.Branche }}",
+            "Zielgruppenrolle": "={{ $json.Zielgruppenrolle }}",
+            "Alter": "={{ $json.Alter }}",
+            "Ziele der Zielgruppe": "={{ $json['Ziele der Zielgruppe'] }}",
+            "Ängste der Zielgruppe": "={{ $json['Ängste der Zielgruppe'] }}",
+            "Land/Region der Zielgruppe": "={{ $json['Land/Region der Zielgruppe'] }}",
+            "Sprache der Keywords": "={{ $json['Sprache der Keywords'] }}",
+            "Long-Tail": "={{ $json['Long-Tail'] }}",
+            "Short-Head": "={{ $json['Short-Head'] }}",
+            "Gesamt": "={{ $json.Gesamt }}"
+          },
+          "matchingColumns": [
+            "Zeitstempel"
+          ],
+          "schema": [
+            {
+              "id": "Zeitstempel",
+              "displayName": "Zeitstempel",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Branche",
+              "displayName": "Branche",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Zielgruppenrolle",
+              "displayName": "Zielgruppenrolle",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Alter",
+              "displayName": "Alter",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Ziele der Zielgruppe",
+              "displayName": "Ziele der Zielgruppe",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Ängste der Zielgruppe",
+              "displayName": "Ängste der Zielgruppe",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Land/Region der Zielgruppe",
+              "displayName": "Land/Region der Zielgruppe",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Sprache der Keywords",
+              "displayName": "Sprache der Keywords",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Gesamt",
+              "displayName": "Gesamt",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Short-Head",
+              "displayName": "Short-Head",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Long-Tail",
+              "displayName": "Long-Tail",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {
+          "useAppend": true
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        96,
+        32
+      ],
+      "id": "81ee69eb-e0de-426e-8301-23737a915c42",
+      "name": "persist_google_sheets_append",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "REPLACE_ME",
+          "name": "gsheets-default"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## Workflow Doc — ICP → SEO/GAIO Keywords → Google Sheets\n\n### Zweck\n- Generiert **exakt 20 SEO/GAIO-Keywords** aus ICP-Form-Daten (B2B/B2C).\n- Speichert **pro Keyword eine Zeile** in Google Sheets.\n---\n### INPUT (Form Trigger JSON)\n- **branche**: string (kommagetrennte Werte möglich)\n- **target_role**: string (kommagetrennte Werte möglich)\n- **age**: string\n- **target_goal**: string (kommagetrennte Werte möglich)\n- **target_pain**: string (kommagetrennte Werte möglich)\n- **target_land**: string (kommagetrennte Werte möglich)\n- **language**: string (z. B. `\"Deutsch\"` oder `\"Deutsch, Englisch\"`)\n- **Zeitstempel**: string (ISO 8601)\n---\n### OUTPUT  \n*(pro Keyword = 1 Item, Google-Sheets-ready)*\n- Zeitstempel  \n- Branche  \n- Zielgruppenrolle  \n- Alter  \n- Ziele der Zielgruppe  \n- Ängste der Zielgruppe  \n- Land/Region der Zielgruppe  \n- Sprache der Keywords  \n- **Gesamt-Keyword**\n- Short-Head (optional)\n- Long-Tail (optional)\n---\n### FEHLERFÄLLE\n- **AI-Output kein valides JSON**  \n  → `parse_error = true`\n\n- **Anzahl Keywords ≠ 20**  \n  → `valid_exactly_20 = false`  \n  → Workflow sollte abbrechen / alerten\n\n- **Split Out ohne „Include All Other Fields“**  \n  → ICP-Daten fehlen in Items  \n  → **Fix:** „Include Other Fields“ aktivieren\n---\n### ABHÄNGIGKEITEN / CREDENTIALS\n- OpenAI Credentials  \n  - Modell: `gpt-4o-mini` (oder vergleichbar)\n- Google Sheets  \n  - OAuth2 oder Service Account  \n  - **Empfehlung:** Service Account bei Self-Hosted\n- Keine Nutzung von `n8n.cloud` Features\n---\n### BETRIEB\n- **Append Row**  \n  - Kein *Append or Update* (sonst Überschreiben bei gleichem Zeitstempel)\n- Logging:\n  - Docker Logs\n  - n8n Execution Logs\n\n",
+        "height": 1360,
+        "width": 464,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -736,
+        -672
+      ],
+      "typeVersion": 1,
+      "id": "6c9c4719-8ca9-48c0-8c21-c407d4a44c26",
+      "name": "Sticky Note"
+    }
+  ],
+  "connections": {
+    "start_form_icp_input": {
+      "main": [
+        [
+          {
+            "node": "validate_normalize_icp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "validate_normalize_icp": {
+      "main": [
+        [
+          {
+            "node": "transform_ai_generate_keywords",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "transform_ai_generate_keywords": {
+      "main": [
+        [
+          {
+            "node": "transform_attach_icp_and_ai_text",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "transform_attach_icp_and_ai_text": {
+      "main": [
+        [
+          {
+            "node": "transform_parse_ai_json",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "transform_parse_ai_json": {
+      "main": [
+        [
+          {
+            "node": "transform_split_keywords",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "transform_split_keywords": {
+      "main": [
+        [
+          {
+            "node": "transform_classify_tail_and_keep_icp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "transform_classify_tail_and_keep_icp": {
+      "main": [
+        [
+          {
+            "node": "persist_google_sheets_append",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "tags": []
+}
