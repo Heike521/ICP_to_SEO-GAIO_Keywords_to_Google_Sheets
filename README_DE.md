@@ -1,6 +1,19 @@
 # n8n Workflow: ICP → SEO/GAIO Keywords → Google Sheets
 
 Dieses Repository versioniert n8n-Workflows als JSON-Dateien.
+![n8n](https://img.shields.io/badge/n8n-FF6C37?style=for-the-badge&logo=n8n&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+
+---
+
+## Workflow ArchiArchitektur
+
+![ICP → SEO/GAIO Keyword Automation](icp-seo-gaio-workflow.png)
+
+---
 
 ## Inhalt
 
